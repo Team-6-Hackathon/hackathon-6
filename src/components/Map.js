@@ -4,9 +4,12 @@ import {  InfoWindow, Marker } from 'google-maps-react';
 
 
 const mapStyles = {
-  width: '50%',
-  height: '100%'
+  width: '45%',
+  height: '80%',
+  marginLeft: "5%"
 };
+
+
 
 
 export class MapContainer extends Component {
@@ -40,7 +43,7 @@ export class MapContainer extends Component {
         style={mapStyles}
         initialCenter={{ lat: 48.8566, lng: 2.3522 }}
       >
-        <Marker
+        <Marker className="cursorStyles"
           onClick={this.onMarkerClick}
           name={'NAME OF HOUSE OR AREA'}
         />
