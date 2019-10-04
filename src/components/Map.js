@@ -9,6 +9,8 @@ const mapStyles = {
 };
 
 
+
+
 export class MapContainer extends Component {
   state = {
     showingInfoWindow: false,  //Hides or the shows the infoWindow
@@ -40,7 +42,7 @@ export class MapContainer extends Component {
         style={mapStyles}
         initialCenter={{ lat: 48.8566, lng: 2.3522 }}
       >
-        <Marker
+        <Marker className="cursorStyles"
           onClick={this.onMarkerClick}
           name={'NAME OF HOUSE OR AREA'}
         />

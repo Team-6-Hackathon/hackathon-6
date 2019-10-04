@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Search from './components/Search';
 import 'bulma/css/bulma.css'
 import Details from "./components/Details"
-
+import Map from './components/Map'
 
 
 class App extends React.Component {
@@ -28,7 +28,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar setQuery = {this.setQuery}/>
-       
+        <Map/>
 
       <Switch>
         {/* <Route exact path='/signup' component={Signup} />
