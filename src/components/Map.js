@@ -34,7 +34,7 @@ export class MapContainer extends Component {
     
     return (
       <React.Fragment>
-     <Map
+      <Map
         google={this.props.google}
         zoom={14}
         style={mapStyles}
@@ -42,7 +42,7 @@ export class MapContainer extends Component {
       >
         <Marker
           onClick={this.onMarkerClick}
-          name={'Kenyatta International Convention Centre'}
+          name={'NAME OF HOUSE OR AREA'}
         />
         <InfoWindow
           marker={this.state.activeMarker}

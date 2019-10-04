@@ -28,7 +28,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar setQuery = {this.setQuery}/>
-        
+       
 
       <Switch>
         {/* <Route exact path='/signup' component={Signup} />
