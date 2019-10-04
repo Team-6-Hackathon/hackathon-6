@@ -10,7 +10,7 @@ export default class Details extends Component {
           <div class="card">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"></img>
+                <img src="/house.jpg" alt="Placeholder image"></img>
               </figure>
               <div class="card-content">
                 <span class="icon">
@@ -101,7 +101,7 @@ export default class Details extends Component {
     <div class="media">
       <div class="media-left">
         <figure class="image is-48x48">
-          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image"></img>
+          <img src="/house.jpg" alt="Placeholder image"></img>
         </figure>
       </div>
     </div>
@@ -109,7 +109,7 @@ export default class Details extends Component {
     <div class="content">
     Bedroom
       <br></br>
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      {/* <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> */}
     </div>
   </div>
 </div>

@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import 'bulma/css/bulma.css'
 import Details from './Details'
+import Navbar from './components/Navbar'
+import Search from './components/Search'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
