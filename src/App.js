@@ -29,6 +29,9 @@ class App extends React.Component {
     return (
       <div className="App">
       <Navbar setQuery = {this.setQuery}/>
+
+
+
       <SingleShowing 
         image={'/image3.png'} 
         name={'Two Bedroom Loft in the Heart of Paris'}

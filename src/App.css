@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap');
 
 .message{
   display: flex;
@@ -165,6 +166,7 @@
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
+  margin-top: 70px;
 }
 
 .card-text {
@@ -172,8 +174,35 @@
 }
 
 .card-text > p:nth-child(1) {
-  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
+
+.card-text > p:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-text > p:nth-child(3) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-name p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.card-footer h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
 
 
 

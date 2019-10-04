@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
+
 class SingleShowing extends Component {
-    
+    state = {
+        active:false
+    }
     render() {
         return (
             <div className='showing-card'>
@@ -12,14 +15,15 @@ class SingleShowing extends Component {
 
                 <div className='text-section'>
                     <div className='card-heading'>
-                        {/* <h6>where</h6> */}
-                        {
-                        <img src='/active.svg' alt='favorite'/>
+                        { this.state.active ? 
+                        <img src='/active.svg' alt='favorite' onClick={() => this.setState({active:!this.state.active})}/>
+                        :
+                        <img src='/s.svg' alt='blank heart' onClick={() => this.setState({active:!this.state.active})}/>
                         }
                     </div>
 
                     <div className='card-name'>
-                        <h3 style={{color: '#767676'}}> Entire Apartment </h3>
+                        <p style={{color: '#767676'}}> Entire Apartment </p>
                     </div>
 
                     <div className='card-text'>
