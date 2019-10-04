@@ -6,6 +6,7 @@ class Home extends Component {
         return (
             <div className='home'>
                 <div className='search'>
+                    <img src=''/>
                     <form>
                         <input type='text' name='search' placeholder='Search'/>
                         <input type='text' name='date' placeholder='Date'/>
