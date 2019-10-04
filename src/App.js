@@ -1,7 +1,11 @@
 import React from 'react';
 import './App.css';
+import { Switch, Route } from 'react-router-dom'
 import 'bulma/css/bulma.css'
-import Details from './Details'
+import Navbar from "./components/Navbar"
+import Search from "./components/Search"
+import Details from "./components/Details"
+
 
 class App extends React.Component {
   constructor(props) {
@@ -22,15 +26,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar setQuery = {this.setQuery}/>
-
-      <Switch>
-        {/* <Route exact path='/signup' component={Signup} />
-        <Route exact path='/login' component={Login} /> */}
-        <Route exact path='/search' component={Search} />
-        <Route path='/details' component={Details} />
-      </Switch>
-    </div>
-  );
+        <Switch>
+          {/* <Route exact path='/signup' component={Signup} />
+          <Route exact path='/login' component={Login} /> */}
+          <Route exact path='/search' component={Search} />
+          <Route path='/details' component={Details} />
+        </Switch>
+      </div>
+  );}
 }
 
 export default App;
