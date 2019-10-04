@@ -8,6 +8,7 @@ import 'bulma/css/bulma.css'
 import Details from "./components/Details"
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)
