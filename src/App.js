@@ -6,7 +6,7 @@ import Home from './components/Home';
 import Search from './components/Search';
 import 'bulma/css/bulma.css'
 import Details from "./components/Details"
-import SingleShowing from './components/SingleShowing'
+import SingleShowing from './components/SingleShowing.jsx'
 
 
 
