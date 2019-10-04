@@ -2,16 +2,25 @@
   "name": "hackathon",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Team-6-Hackathon.github.io/hackathon-6/",
   "dependencies": {
     "bulma": "^0.7.5",
+<<<<<<< HEAD
+=======
+    "gh": "^2.1.0",
+    "gh-pages": "^2.1.1",
+>>>>>>> 41f579a18ddc4b8d5f41470f31d42e351a0b8272
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -5,3 +5,55 @@
   width: 50%;
 }
 
+.App-link {
+  color: #09d3ac;
+}
+
+.navbar{
+  padding: 0 15px;
+  border-bottom: 1px solid #101010;
+}
+
+.navbar-brand > img{
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-start{
+  margin: 15px 0 15px 15px;
+}
+
+.navbar-start img{
+  margin: 20px 0 5px 15px;
+  width: 25px;
+  height: 25px;
+
+}
+
+#search-bar{
+  padding: 25px 210px 25px 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#search-bar::placeholder{
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.nav-links{
+  padding: 25px 0;
+}
+
+.nav-links > li{
+  font-weight: bolder;
+  display: inline;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.nav-links > li > a{
+  color: black;
+}
