@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Search from './components/Search';
 import 'bulma/css/bulma.css'
-import Details from './Details'
+import Details from "./components/Details"
+
 
 class App extends React.Component {
   constructor(props) {
