@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from "react-router-dom"
 import Navbar from './components/Navbar';
@@ -7,18 +6,34 @@ import Navbar from './components/Navbar';
 // import Signup from './components/Signup';
 import Search from './components/Search';
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar/>
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-      <Switch>
-        {/* <Route exact path='/signup' component={Signup} />
-        <Route exact path='/login' component={Login} /> */}
-        <Route exact path='/search' component={Search} />
-      </Switch>
-    </div>
-  );
+  state ={
+    query: ""
+  }
+
+  setQuery = (newQuery) =>{
+    this.setState({
+      query: newQuery
+    })
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <Navbar setQuery = {this.setQuery}/>
+
+        <Switch>
+          {/* <Route exact path='/signup' component={Signup} />
+          <Route exact path='/login' component={Login} /> */}
+          <Route exact path='/search' component = {Search}/>
+        </Switch>
+      </div>
+    );
+  }
 }
 
 export default App;
