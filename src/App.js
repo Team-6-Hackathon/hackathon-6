@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Switch, Route} from "react-router-dom"
 import Navbar from './components/Navbar';
-// import Login from './components/Login';
-// import Signup from './components/Signup';
 import Home from './components/Home';
 import Search from './components/Search';
+import 'bulma/css/bulma.css'
+import Details from './Details'
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar/>
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  state ={
+    query: ""
+  }
+
+  setQuery = (newQuery) =>{
+    this.setState({
+      query: newQuery
+    })
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <Navbar setQuery = {this.setQuery}/>
 
       <Switch>
         {/* <Route exact path='/signup' component={Signup} />
         <Route exact path='/login' component={Login} /> */}
         <Route exact path='/' component={Home} />
         <Route exact path='/search' component={Search} />
+        <Route path='/details' component={Details} />
       </Switch>
     </div>
   );
+}
 }
 
 export default App;

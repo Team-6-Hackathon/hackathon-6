@@ -16,7 +16,7 @@ class Navbar extends React.Component{
           <div className = "navbar-start">
             <div className="field">
               <div className="control has-icons-left">
-                <input id = "search-bar" className="input" type="text" placeholder="Paris" />
+                <input id = "search-bar" className="input" type="text" placeholder="Paris" onChange = {(e) => this.props.setQuery(e.target.value)}/>
                 <span className="icon is-small is-left">
                   <img src ="/magnifying_glass.svg" />
                 </span>
