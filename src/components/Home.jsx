@@ -6,11 +6,11 @@ class Home extends Component {
         return (
             <div className='home'>
                 <div className='search'>
-                    <img src=''/>
-                    <form>
+                    <img src='/Airbnb_logo.jpg' alt='logo'/>
+                    <form onSubmit=''>
                         <input type='text' name='search' placeholder='Search'/>
                         <input type='text' name='date' placeholder='Date'/>
-                        <input type='submit' value='Submit'/>
+                        <Link className='link-button' to='/search'> Submit </Link>
                     </form>
                 </div>
             </div>
