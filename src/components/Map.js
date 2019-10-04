@@ -4,8 +4,9 @@ import {  InfoWindow, Marker } from 'google-maps-react';
 
 
 const mapStyles = {
-  width: '50%',
-  height: '100%'
+  width: '45%',
+  height: '80%',
+  marginLeft: "5%"
 };
 
 

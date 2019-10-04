@@ -259,3 +259,15 @@
 .hidden {
   display:none;
 }
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+}
+
+#search-results{
+  margin-top: -28px;
+  margin-left: 25px;
+  margin-right: -25px;
+}
