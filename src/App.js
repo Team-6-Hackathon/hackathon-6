@@ -9,6 +9,7 @@ import Details from "./components/Details"
 import SingleShowing from './components/SingleShowing'
 
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)
