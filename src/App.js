@@ -6,8 +6,8 @@ import Home from './components/Home';
 import Search from './components/Search';
 import 'bulma/css/bulma.css'
 import Details from "./components/Details"
+import Map from './components/Map'
 import SingleShowing from './components/SingleShowing.jsx'
-
 
 
 class App extends React.Component {
@@ -28,7 +28,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-      <Navbar setQuery = {this.setQuery}/>
+        <Navbar setQuery = {this.setQuery}/>
+
       <Switch>
         {/* <Route exact path='/signup' component={Signup} />
         <Route exact path='/login' component={Login} /> */}
